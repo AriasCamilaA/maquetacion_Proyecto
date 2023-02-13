@@ -1,63 +1,6 @@
-:root {
-    --blanco: #ffffff;
-    --fuccia-oscuro: #732F48;
-    --rosado: #F26B9C;
-    --rosado-transparente: #F26B9C66;
-    --fuccia-claro: #8C274C;
-    --big: 32px;
-    --medium: 24;;
-    --normal: 12px;
-    --btn-sm: 140px;
-    --btn-lg: 300px;
-}
-
-.bg-fc-osc {
-    background-color: var(--fuccia-oscuro);
-}
-
-.bg-fc-cla {
-    background-color: var(--fuccia-claro);
-}
-
-*{
-    box-sizing: content-box;
-}
-
+@import "../css/general.css";
 body {
-    margin: 0;
     color:var(--blanco);
-}
-
-section {
-    margin: 26px 0;
-    background-color: var(--rosado-transparente);
-    padding: 24px 0;
-    display: flex;
-}
-
-h1 {
-    font-family: "sofia", "cursiva";
-}
-
-.contenedor {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.btn {
-    background-color: var(--rosado-transparente);
-    border: none;
-    border-radius: 50px;
-    padding: 12px;
-    gap: 8px;
-    font-family: "sofia", "cursiva";
-    color:var(--blanco);
-    width: var(--btn-sm);
-}
-
-.btn:hover {
-    background-color: var(--rosado);
-    cursor: pointer;
 }
 
 /* section - banner */
@@ -88,7 +31,7 @@ h1 {
 /* section - banner */
 .banner {
     display: flex;
-    border-radius: 25px;
+    border-radius: 26px;
     align-items: center;
     overflow:hidden;
 }
@@ -109,7 +52,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 26px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -117,7 +60,7 @@ h1 {
 
 .opciones img:first-child {
     height: 180px;
-    border-radius: 25px;
+    border-radius: 26px;
     margin-right: 15px;
 }
 
@@ -141,6 +84,10 @@ h1 {
 }
 
 /* section - visitanos */
+.visitanos {
+    flex-direction: column;
+}
+
 .visitanos div {
     display: flex;
     background-color: var(--fuccia-claro);
@@ -150,19 +97,16 @@ h1 {
     align-items: center;
 }
 
-.visitanos .desc {
-    justify-content: space-between;
-}
-
 .visitanos p{
     width: 30%;
     margin: auto;
     text-align: center;
+    padding: 15px;
 }
 
 .visitanos h1 {
     text-align: center;
-    border-radius: 25px;
+    border-radius: 26px;
 }
 
 /* footer */

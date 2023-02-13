@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+:root {
+    --blanco: #ffffff;
+    --fuccia-oscuro: #732F48;
+    --rosado: #F26B9C;
+    --rosado-transparente: #F26B9C66;
+    --fuccia-claro: #8C274C;
+    --big: 32px;
+    --medium: 24;;
+    --normal: 12px;
+    --btn-sm: 140px;
+    --btn-lg: 300px;
+}
+
+body {
+    margin: 0;
+    color: var(--fuccia-oscuro);
+    font-family: 'Quantico', sans-serif;
+}
+
+input {
+    font-family: 'Quantico', sans-serif;
+}
+
+.bg-fc-osc {
+    background-color: var(--fuccia-oscuro);
+}
+
+.bg-fc-cla {
+    background-color: var(--fuccia-claro);
+}
+
+.bg-wt{
+    background-color: var(--blanco);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: "sofia", "cursiva";
+}
+
+section {
+    margin: 26px 0;
+    background-color: var(--rosado-transparente);
+    padding: 24px 0;
+    display: flex;
+}
+.contenedor {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: var(--rosado-transparente);
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    gap: 8px;
+    font-family: "sofia", "cursiva";
+    color:var(--blanco);
+    width: var(--btn-sm);
+}
+
+.btn:hover {
+    background-color: var(--rosado);
+    cursor: pointer;
+    color: var(--blanco);
+}
