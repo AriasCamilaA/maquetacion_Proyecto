@@ -1,0 +1,95 @@
+@import "../css/general.css";
+h1 {
+    margin: 0;
+}
+/* menu superior */
+.top-menu {
+    position: fixed;
+    width: 100%;
+    padding: 4px 20px;
+    display: flex;
+    background-color: var(--fuccia-oscuro);
+    color: var(--blanco);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo, .menu-user {
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo img {
+    background-color: var(--blanco);
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.menu-user .user-name{
+    margin-right: 15px;
+}
+
+.menu-user .user-img {
+    height: 40px;
+    background-color: #ffffff80;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.menu-icon {
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.menu-user:hover,.menu-icon:hover, .rigth-menu >ul li:hover {
+    background-color: #ffffff80;
+    cursor: pointer;
+}
+
+/* Opciones del usuario */
+.user-options {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: var(--fuccia-oscuro);
+    color: var(--blanco);
+    padding: 4px 20px;
+    border-radius: 0 0 16px 16px;
+}
+
+.user-options ul {
+    list-style: none;
+    padding: 0;
+}
+.user-options li {
+    margin-bottom: 16px;
+}
+
+/* Rigth menu */
+.rigth-menu {
+    z-index: -1;
+    display: flex;
+    top: 0;
+    position: fixed;
+    background-color: var(--fuccia-oscuro);
+    color: var(--blanco);
+    width: 220px;
+    height: 100vh;
+    padding: 70px 16px;
+}
+
+.rigth-menu > ul{
+    list-style: none;
+    padding: 0;
+    width: -webkit-fill-available;
+}
+
+.rigth-menu >ul li{
+    padding: 8px;
+    width: inherit;
+    border-radius: 4px;
+}
+
